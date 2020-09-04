@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="iitsprogrammingclub" prefHeight="432.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iits_programming.FXMLDocumentController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="layout" prefHeight="502.0" prefWidth="674.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/proggif.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="221.0" layoutY="149.0" text="IITS Programming Club">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="30.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" proportional="false" startX="0.42857142857142855" startY="0.6047619047619047">
+                     <stops>
+                        <Stop color="#d1edff" />
+                        <Stop color="#c8ff7b" offset="0.4329896907216495" />
+                        <Stop color="#7d7c8a" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button layoutX="331.0" layoutY="294.0" mnemonicParsing="false" onAction="#mainwork" prefHeight="42.0" prefWidth="124.0" style="-fx-background-radius: 50; -fx-border-color: blue; -fx-border-radius: 50; -fx-background-color: green;" text="ENTER">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="adminLoginPane" layoutY="-1.0" prefHeight="496.0" prefWidth="674.0" style="-fx-background-color: green;" visible="false">
+         <children>
+            <Label layoutX="286.0" layoutY="57.0" text="Admin Login">
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#e4ffc3" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="77.0" layoutY="176.0" text="User Name" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="252.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="aName" layoutX="266.0" layoutY="177.0" prefHeight="25.0" prefWidth="271.0" promptText="User Name" style="-fx-background-color: blue; -fx-background-radius: 20;" />
+            <PasswordField fx:id="aPassword" layoutX="266.0" layoutY="253.0" prefHeight="25.0" prefWidth="280.0" promptText="User Password" style="-fx-background-color: blue; -fx-background-radius: 20;" />
+            <Button fx:id="aLogin" layoutX="292.0" layoutY="332.0" mnemonicParsing="false" onAction="#handelAdminLoginfinal" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Login" />
+            <Separator layoutX="15.0" layoutY="107.0" prefHeight="3.0" prefWidth="658.0" />
+            <Button fx:id="userLogin" layoutX="477.0" layoutY="428.0" mnemonicParsing="false" onAction="#handelUserLogin" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: transparent;" text="Login As a User" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="userLoginPane" prefHeight="496.0" prefWidth="674.0" style="-fx-background-color: green;" visible="false">
+         <children>
+            <Label layoutX="300.0" layoutY="47.0" text="User login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="176.0" text="User Name:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="252.0" text="Password:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="uName" layoutX="266.0" layoutY="177.0" prefHeight="25.0" prefWidth="271.0" promptText="User Name" style="-fx-background-color: blue; -fx-background-radius: 20;" />
+            <PasswordField fx:id="uPassword" layoutX="266.0" layoutY="253.0" prefHeight="25.0" prefWidth="280.0" promptText="User Password" style="-fx-background-color: blue; -fx-background-radius: 20;" />
+            <Button fx:id="uLogin" layoutX="307.0" layoutY="326.0" mnemonicParsing="false" onAction="#handelUserLoginfinal" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Login" />
+            <Separator layoutX="15.0" layoutY="107.0" prefHeight="3.0" prefWidth="650.0" />
+            <Button fx:id="adminLogin" layoutX="473.0" layoutY="416.0" mnemonicParsing="false" onAction="#handelAdminLogin" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: transparent;" text="Login As a Admin" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="studentinfo" prefHeight="480.0" prefWidth="674.0" visible="false">
+         <children>
+            <Label layoutX="263.0" layoutY="57.0" prefHeight="23.0" prefWidth="193.0" text="IITS Programming Club" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="122.0" text="Name :" />
+            <Label layoutX="75.0" layoutY="160.0" text="ID:" />
+            <Label layoutX="75.0" layoutY="197.0" text="Password:" />
+            <Label layoutX="74.0" layoutY="232.0" prefHeight="17.0" prefWidth="127.0" text="Codeforces Handle:" />
+            <Label layoutX="73.0" layoutY="272.0" prefHeight="17.0" prefWidth="102.0" text="Codechef Handle:" />
+            <Label layoutX="75.0" layoutY="309.0" text="Vjudge Handle:" />
+            <Label layoutX="74.0" layoutY="351.0" text="Hackerrank Handle:" />
+            <Label layoutX="71.0" layoutY="393.0" text="Atcoder Handle:" />
+            <TextField fx:id="username" layoutX="193.0" layoutY="118.0" prefHeight="25.0" prefWidth="380.0" />
+            <TextField fx:id="userid" layoutX="193.0" layoutY="156.0" prefHeight="25.0" prefWidth="380.0" />
+            <TextField fx:id="userpass" layoutX="193.0" layoutY="193.0" prefHeight="25.0" prefWidth="380.0" />
+            <TextField fx:id="codeforces" layoutX="193.0" layoutY="228.0" prefHeight="25.0" prefWidth="380.0" />
+            <TextField fx:id="codechef" layoutX="193.0" layoutY="268.0" prefHeight="25.0" prefWidth="380.0" />
+            <TextField fx:id="vjudge" layoutX="193.0" layoutY="305.0" prefHeight="25.0" prefWidth="380.0" />
+            <TextField fx:id="hackerrank" layoutX="193.0" layoutY="347.0" prefHeight="25.0" prefWidth="380.0" />
+            <TextField fx:id="atcoder" layoutX="193.0" layoutY="389.0" prefHeight="25.0" prefWidth="380.0" />
+            <Button layoutX="329.0" layoutY="426.0" mnemonicParsing="false" onAction="#UpdateInfo" text="UPDATE" />
+            <Button layoutX="585.0" layoutY="426.0" mnemonicParsing="false" onAction="#log" text="Log Out" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="adminLoginPane1" layoutY="3.0" prefHeight="496.0" prefWidth="674.0" style="-fx-background-color: green;" visible="false">
+         <children>
+            <Label layoutX="286.0" layoutY="57.0" text="Admin Login">
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#e4ffc3" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="77.0" layoutY="176.0" text="User Name" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="252.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="aName1" layoutX="266.0" layoutY="177.0" prefHeight="25.0" prefWidth="271.0" promptText="User Name" style="-fx-background-color: blue; -fx-background-radius: 20;" />
+            <PasswordField fx:id="aPassword1" layoutX="266.0" layoutY="253.0" prefHeight="25.0" prefWidth="280.0" promptText="User Password" style="-fx-background-color: blue; -fx-background-radius: 20;" />
+            <Button fx:id="aLogin1" layoutX="292.0" layoutY="332.0" mnemonicParsing="false" onAction="#handelAdminLoginfinal" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Login" />
+            <Separator layoutX="15.0" layoutY="107.0" prefHeight="3.0" prefWidth="658.0" />
+            <Button fx:id="userLogin1" layoutX="477.0" layoutY="428.0" mnemonicParsing="false" onAction="#handelUserLogin" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: transparent;" text="Login As a User" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

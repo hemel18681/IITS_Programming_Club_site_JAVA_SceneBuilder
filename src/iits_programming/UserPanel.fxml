@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iits_programming.UserPanelController">
+   <children>
+      <AnchorPane fx:id="studentinfo" prefHeight="480.0" prefWidth="585.0">
+         <children>
+            <Label layoutX="196.0" layoutY="59.0" prefHeight="23.0" prefWidth="193.0" text="IITS Programming Club" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="122.0" text="Name :" />
+            <Label layoutX="75.0" layoutY="160.0" text="ID:" />
+            <Label layoutX="75.0" layoutY="197.0" text="Password:" />
+            <Label layoutX="74.0" layoutY="232.0" prefHeight="17.0" prefWidth="127.0" text="Codeforces Handle:" />
+            <Label layoutX="73.0" layoutY="272.0" prefHeight="17.0" prefWidth="102.0" text="Codechef Handle:" />
+            <Label layoutX="75.0" layoutY="309.0" text="Vjudge Handle:" />
+            <Label layoutX="74.0" layoutY="351.0" text="Hackerrank Handle:" />
+            <Label layoutX="71.0" layoutY="393.0" text="Atcoder Handle:" />
+            <TextField fx:id="username" layoutX="193.0" layoutY="118.0" prefHeight="25.0" prefWidth="271.0" />
+            <TextField fx:id="userid" layoutX="193.0" layoutY="156.0" prefHeight="25.0" prefWidth="271.0" />
+            <TextField fx:id="userpass" layoutX="193.0" layoutY="193.0" prefHeight="25.0" prefWidth="271.0" />
+            <TextField fx:id="codeforces" layoutX="193.0" layoutY="228.0" prefHeight="25.0" prefWidth="271.0" />
+            <TextField fx:id="codechef" layoutX="193.0" layoutY="268.0" prefHeight="25.0" prefWidth="271.0" />
+            <TextField fx:id="vjudge" layoutX="193.0" layoutY="305.0" prefHeight="25.0" prefWidth="271.0" />
+            <TextField fx:id="hackerrank" layoutX="193.0" layoutY="347.0" prefHeight="25.0" prefWidth="271.0" />
+            <TextField fx:id="atcoder" layoutX="193.0" layoutY="389.0" prefHeight="25.0" prefWidth="271.0" />
+            <Button layoutX="237.0" layoutY="426.0" mnemonicParsing="false" text="UPDATE" />
+            <Button layoutX="500.0" layoutY="426.0" mnemonicParsing="false" text="Log Out" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

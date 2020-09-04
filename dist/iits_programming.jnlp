@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="iits_programming.jnlp">
+  <information>
+    <title>iits_programming</title>
+    <vendor>Asus</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="iits_programming.jar" size="810502" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.40-bin.jar" size="990927" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="iits_programming" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="iits_programming.Iits_programming"  name="iits_programming" />
+  <update check="always"/>
+</jnlp>
